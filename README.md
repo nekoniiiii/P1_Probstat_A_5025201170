@@ -1,8 +1,8 @@
 # Praktikum Modul 1 Probabilitas dan Statistik
 
-Nama: Neisa Hibatillah Alif <br />
+**Nama: Neisa Hibatillah Alif <br />
 NRP: 5025201170 <br />
-Kelas A 
+Kelas A**
 
 ## 1
 ### a. <br />

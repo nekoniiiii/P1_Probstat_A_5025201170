@@ -6,7 +6,7 @@ Kelas A**
 
 ## 1
 ### a. <br />
-Menggunakan fungsi `dgeom()`:
+Menggunakan fungsi `dgeom()` :
 ```
 p = 0.2
 x = 3
@@ -16,7 +16,7 @@ Hasil: <br />
 ![image](https://user-images.githubusercontent.com/72701806/162611163-2fd247e6-a2e1-47a4-b54f-78c3cc9096f9.png)
 
 ### b. <br />
-Menggunakan fungsi `mean()` dan `rgeom()`:
+Menggunakan fungsi `mean()` dan `rgeom()` :
 ```
 n = 10000
 mean(rgeom(n, p) == 3)
@@ -61,7 +61,7 @@ Hasil: <br />
 
 ## 2
 ### a. <br />
-Menggunakan fungsi `dbiom()`:
+Menggunakan fungsi `dbiom()` :
 ```
 n = 20
 p = 0.2
@@ -104,7 +104,7 @@ Hasil: <br />
 
 ## 3
 ### a. <br />
-Menggunakan fungsi `dpois()`:
+Menggunakan fungsi `dpois()` :
 ```
 lambda = 4.5
 x = 6
@@ -155,6 +155,38 @@ Hasil: <br />
 
 ## 4
 ### a. <br />
+Menggunakan fungsi `dchisq` :
+```
+x = 2
+df = 10
+dchisq(x, df)
+```
+Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162617706-61a9c0ed-6238-47cb-a00a-a180dd054a75.png)
+
+### b. <br />
+Histogram dari distribusi chi-square dengan 100 data random.
+```
+v = rchisq(100, df)
+hist(v)
+```
+Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162617756-6d8a8aeb-31f5-4f28-ac15-430cf271e0cd.png)
+
+### c. <br />
+Rataan = df <br />
+Varian = df <br />
+```
+mean <- df
+variance <- 2*df
+mean
+variance
+```
+Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162617805-d470a4aa-348d-41ca-8dc6-965ae4d7ccc4.png)
+
+## 5
+### a. <br />
 
 ```
 
@@ -163,21 +195,84 @@ Hasil: <br />
 
 
 ### b. <br />
-
+Histogram dari distribusi exponensial untuk 10, 100, 1000 dan 10000 bilangan random.
 ```
+set.seed(1)
 
+hist(rexp(10))
+hist(rexp(100))
+hist(rexp(1000))
+hist(rexp(10000))
 ```
 Hasil: <br />
+10 bilangan random: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618023-d6c6568d-cf07-4d9f-a8d1-abceddab0579.png)
 
+100 bilangan random: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618064-55d04164-7f90-4750-9751-927b4fa78f36.png)
+
+1000 bilangan random: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618081-3aa89420-4736-4e1c-bdd7-c28a4918420c.png)
+
+10000 bilangan random: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618113-76224d0e-130c-4189-a4e6-8ad1a83197d0.png)
 
 ### c. <br />
-
-
-### d. <br />
-
-
+Rataan = 1/lambda <br />
+Varian = 1/lambda^2 <br />
 ```
+lambda = 3
 
+mean <- 1/lambda
+variance <- 1/lambda^2
+mean
+variance
 ```
 Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618158-1714dfaf-3823-454f-a650-8df36d670940.png)
 
+## 6
+### a. <br />
+Hitung Z-Score dari fungsi probabilitas dari distribusi Normal dan plot data randomnya dalam bentuk grafik.
+```
+n = 100
+mean = 5
+sd = 8
+
+z <- rnorm(n, mean, sd)
+z
+
+plot(z)
+```
+Hasil: <br />
+Z-Score: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618215-6d3774f5-b04f-4114-b0b6-1a21ebfb36af.png)
+
+Plot: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618234-e5d167bd-dd3e-4d51-905c-43cc7e1ec9d2.png)
+
+### b. <br />
+Histogram dari distribusi normal dengan breaks 50:
+```
+hist(z, breaks = 50, 
+     main = "5025201170_Neisa Hibatillah Alif_Probstat_A_DNhistogram")
+```
+Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618330-1d531e8e-ada8-4e6f-8d4d-702eb3d40b5a.png)
+
+### c. <br />
+Varian = sd^2 <br />
+```
+variance <- sd^2
+variance
+```
+Hasil: <br />
+![image](https://user-images.githubusercontent.com/72701806/162618379-b09bf4e2-44d0-4a42-9b43-51f1149b1b11.png)
+
+
+Referensi: <br />
+https://rpubs.com/mpfoley73/458721 <br />
+https://rpubs.com/mpfoley73/458411 <br />
+https://rpubs.com/mpfoley73/456645 <br />
+https://rpubs.com/rsshalini/109890 <br />
+https://r-lang.com/rnorm-function-in-r/ <br />

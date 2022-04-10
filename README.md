@@ -1,12 +1,12 @@
-# Praktikum 1 
+# Praktikum Modul 1 Probabilitas dan Statistik
 
 Nama: Neisa Hibatillah Alif <br />
 NRP: 5025201170 <br />
-Kelas Probstat A 
+Kelas A 
 
 ## 1
 ### a. <br />
-Menggunakan fungsi dgeom():
+Menggunakan fungsi `dgeom()`:
 ```
 p = 0.2
 x = 3
@@ -16,7 +16,7 @@ Hasil: <br />
 ![image](https://user-images.githubusercontent.com/72701806/162611163-2fd247e6-a2e1-47a4-b54f-78c3cc9096f9.png)
 
 ### b. <br />
-Menggunakan fungsi mean() dan rgeom():
+Menggunakan fungsi `mean()` dan `rgeom()`:
 ```
 n = 10000
 mean(rgeom(n, p) == 3)

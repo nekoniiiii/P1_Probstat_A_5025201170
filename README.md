@@ -187,12 +187,13 @@ Hasil: <br />
 
 ## 5
 ### a. <br />
-
+Menggunakan fungsi `rexp()` :
 ```
-
+lambda = 3
+rexp(lambda)
 ```
 Hasil: <br />
-
+![image](https://user-images.githubusercontent.com/72701806/162621147-381180df-0830-4d57-a246-0882cbbe2f7c.png)
 
 ### b. <br />
 Histogram dari distribusi exponensial untuk 10, 100, 1000 dan 10000 bilangan random.
@@ -221,15 +222,13 @@ Hasil: <br />
 Rataan = 1/lambda <br />
 Varian = 1/lambda^2 <br />
 ```
-lambda = 3
-
 mean <- 1/lambda
 variance <- 1/lambda^2
 mean
 variance
 ```
 Hasil: <br />
-![image](https://user-images.githubusercontent.com/72701806/162618158-1714dfaf-3823-454f-a650-8df36d670940.png)
+![image](https://user-images.githubusercontent.com/72701806/162621169-7a2c2208-6bc6-4e1c-8261-873f6b6788b2.png)
 
 ## 6
 ### a. <br />

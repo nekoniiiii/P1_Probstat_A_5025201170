@@ -241,13 +241,13 @@ sd = 8
 
 z <- rnorm(n, mean, sd)
 z
-
-plot(z)
 ```
-Hasil: <br />
 Z-Score: <br />
 ![image](https://user-images.githubusercontent.com/72701806/162618215-6d3774f5-b04f-4114-b0b6-1a21ebfb36af.png)
 
+```
+plot(z)
+```
 Plot: <br />
 ![image](https://user-images.githubusercontent.com/72701806/162618234-e5d167bd-dd3e-4d51-905c-43cc7e1ec9d2.png)
 
